@@ -135,6 +135,17 @@ header .navbar .navbar-links .sidebar-logo{
     display: none;
 }
 
+.header-search{
+    display: flex;
+    align-items: center;
+}
+
+.header-search a{
+    padding: 0 10px;
+    color: #fff;
+    line-height: 70px;
+}
+
 
 
 
@@ -152,10 +163,7 @@ header .navbar .navbar-links .sidebar-logo{
     header .navbar .navbar-links  .links li{
         padding: 0 10px;
     }
-}
 
-
-@media (max-width: 768px) {
     header .navbar .navbar-links{
         display: block;
         position: fixed;
@@ -281,4 +289,11 @@ header .navbar .navbar-links .sidebar-logo{
 
 
 
+}
+
+
+@media (max-width: 370px){
+    header .navbar .navbar-links{
+        max-width: 100%;
+    }
 }

@@ -28,12 +28,12 @@ menuLi.forEach((item) => {
             li.classList.remove("active");
         });
 
-        submenu.forEach((item) => {
-            item.addEventListener("click", (e) => {
-                e.currentTarget.classList.toggle("show-menu");
-            });
-        });
+        e.currentTarget.classList.toggle("active");
+    });
+});
 
-        e.currentTarget.classList.add("active");
+submenu.forEach((item) => {
+    item.addEventListener("click", (e) => {
+        e.currentTarget.classList.toggle("show-menu");
     });
 });
