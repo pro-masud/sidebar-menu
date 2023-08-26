@@ -41,6 +41,7 @@ submenu.forEach((item) => {
 
 
 const navbar = document.querySelector("header");
+const topMenu = document.querySelector(".top-menu");
 
 window.addEventListener("scroll", () => {
     const scrollHeight = window.scrollY;
@@ -52,4 +53,17 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("nav-fix");
    }
 
+
+   console.log(scrollHeight);
+
+   if( scrollHeight > 200){
+        topMenu.classList.add("show-btn");
+   }else{
+        topMenu.classList.remove("show-btn");
+   }
+
+});
+
+topMenu.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
 });
