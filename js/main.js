@@ -37,3 +37,19 @@ submenu.forEach((item) => {
         e.currentTarget.classList.toggle("show-menu");
     });
 });
+
+
+
+const navbar = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    const scrollHeight = window.scrollY;
+    const navbarHeight = navbar.getBoundingClientRect().height;
+
+   if( scrollHeight > navbarHeight){
+        navbar.classList.add("nav-fix");
+   }else{
+    navbar.classList.remove("nav-fix");
+   }
+
+});
